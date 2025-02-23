@@ -1,0 +1,2 @@
+,number,value,datetime_start,datetime_complete,duration,params_batch_size,params_l2_norm,params_learning_rate,state
+0,0,0.7471413041582616,2024-06-26 15:32:38.812516,2024-06-26 15:33:15.925314,0 days 00:00:37.112798,64,0.0003,3e-05,COMPLETE

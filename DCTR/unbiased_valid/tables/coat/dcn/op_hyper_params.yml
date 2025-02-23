@@ -1,0 +1,58 @@
+coat:
+  TJR-CTR:
+    alpha1: 0.08177824896069794
+    alpha2: 0.5
+    bsize: 64
+    l2: 0.001
+    lr: 0.0001
+  Bridge-CTR:
+    alpha1: 1
+    bsize: 64
+    l2: 3.0e-06
+    lr: 3.0e-05
+  CausE-CTR:
+    alpha1: 1
+    bsize: 16
+    l2: 0.001
+    lr: 1.0e-05
+  DR-CTR:
+    beta1: 0.011139337633984326
+    bsize: 16
+    l2: 3.0e-05
+    lr: 0.001
+  DRJL-CTR:
+    beta1: 0.8737118967248442
+    bsize: 32
+    l2: 3.0e-06
+    lr: 0.001
+  IDIPS-CTR:
+    beta1: 0.207615722658483
+    bsize: 16
+    l2: 0.001
+    lr: 0.0001
+  IPS-CTR:
+    bsize: 16
+    l2: 0.001
+    lr: 0.0001
+  Refine-CTR:
+    beta1: 0.5876344621512547
+    bsize: 32
+    l2: 0.001
+    lr: 0.0001
+  UDIPS-CTR:
+    beta1: 0.48730943518490105
+    bsize: 16
+    l2: 0.001
+    lr: 0.0001
+  bias_BASE-CTR:
+    bsize: 32
+    l2: 0.0001
+    lr: 0.001
+  combine_BASE-CTR:
+    bsize: 16
+    l2: 0.001
+    lr: 0.0001
+  unif_BASE-CTR:
+    bsize: 16
+    l2: 3.0e-05
+    lr: 0.001

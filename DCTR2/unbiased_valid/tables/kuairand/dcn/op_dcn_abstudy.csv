@@ -1,0 +1,2 @@
+,number,value,datetime_start,datetime_complete,duration,params_alpha1,params_alpha2,params_batch_size,params_beta1,params_k,params_l2_norm,params_learning_rate,state
+0,0,0.7241348744046603,2024-07-15 11:24:41.378190,2024-07-15 11:31:12.681250,0 days 00:06:31.303060,0.0001,5,256,5,3,0.0003,3e-05,COMPLETE

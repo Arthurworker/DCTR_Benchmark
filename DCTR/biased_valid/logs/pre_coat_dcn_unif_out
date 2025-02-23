@@ -1,0 +1,37 @@
+nohup: ignoring input
+2024-07-01 21:21:03.618407: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-07-01 21:21:06.825878: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-01 21:21:06.825989: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2024-07-01 21:21:06.826646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:22:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.74GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-01 21:21:06.826678: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-07-01 21:21:06.826744: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-07-01 21:21:06.826770: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2024-07-01 21:21:06.860213: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-07-01 21:21:06.860666: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-07-01 21:21:06.860820: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu::/usr/local/cuda-11.7/lib64
+2024-07-01 21:21:06.861650: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-07-01 21:21:06.861711: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-07-01 21:21:06.861722: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-07-01 21:21:06.862031: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX512F
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-01 21:21:06.868236: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-01 21:21:06.868274: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-01 21:21:06.868282: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      
+2024-07-01 21:21:06.923900: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2024-07-01 21:21:06.943695: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2500000000 Hz
+{'model_opt': {'latent_dim': 16, 'feat_num': 647, 'field_num': 10, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'coat', 'model': 'dcn', 'data_dir': 'data/coat/tfrecord2', 'cuda': 5, 'source': 'unif'}
+==================================================
+|         BASE-CTR: Set the random seed          |
+==================================================
+
+==================================================
+|               BASE-CTR: Training               |
+==================================================
+
+######### trainer ###########
+lr: 0.001 l2: 0.001 bs: 32
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:00<1:17:34,  1.07it/s]  0%|          | 2/5000 [00:01<40:56,  2.03it/s]    0%|          | 3/5000 [00:01<29:50,  2.79it/s]  0%|          | 4/5000 [00:01<24:07,  3.45it/s]  0%|          | 5/5000 [00:01<20:34,  4.05it/s]  0%|          | 6/5000 [00:01<18:08,  4.59it/s]  0%|          | 7/5000 [00:01<15:53,  5.23it/s]  0%|          | 8/5000 [00:02<14:34,  5.71it/s]  0%|          | 9/5000 [00:02<13:58,  5.95it/s]  0%|          | 10/5000 [00:02<13:54,  5.98it/s]  0%|          | 10/5000 [00:02<21:24,  3.88it/s]
+AUC:  0.6324010719746076 LOGlOSS:  0.7625397327351037 test_AUC:  0.0 test_LOGlOSS:  10000.0

@@ -1,0 +1,2 @@
+,number,value,datetime_start,datetime_complete,duration,params_alpha,params_batch_size,params_l2_norm,params_learning_rate,state
+0,0,0.7609122653862942,2025-02-18 16:54:47.535690,2025-02-18 16:55:10.804950,0 days 00:00:23.269260,0.003,64,1e-05,0.0003,COMPLETE

@@ -1,0 +1,300 @@
+kuairand:
+  CMICausE-CTR:
+    alpha1: 1.0e-05
+    batch_size: 1024
+    beta2: 1.0e-05
+    eps: 10
+    k: 1
+    l2_norm: 0.001
+    lamb: 1.0e-05
+    learning_rate: 1.0e-05
+  CMIDR-CTR:
+    batch_size: 128
+    beta1: 0.36751292610030156
+    beta2: 0.01
+    eps: 10
+    k: 1
+    l2_norm: 0.001
+    lamb: 1
+    learning_rate: 3.0e-05
+  CMIDRJL-CTR:
+    batch_size: 512
+    beta1: 0.3642880469062858
+    beta2: 0.0001
+    eps: 50
+    k: 20
+    l2_norm: 0.0003
+    lamb: 0.001
+    learning_rate: 0.0001
+  CMIIDIPS-CTR:
+    batch_size: 512
+    beta1: 0.033129888079059186
+    beta2: 0.01
+    eps: 5
+    k: 20
+    l2_norm: 0.001
+    lamb: 0.001
+    learning_rate: 0.0001
+  CMIIPS-CTR:
+    batch_size: 256
+    beta2: 0.01
+    eps: 0.5
+    k: 3
+    l2_norm: 3.0e-05
+    lamb: 0.0001
+    learning_rate: 0.0003
+  CMITJR-CTR:
+    alpha1: 0.044399599835123094
+    alpha2: 1
+    batch_size: 256
+    beta1: 5
+    eps: 5
+    k: 3
+    l2_norm: 0.001
+    lamb: 0.01
+    learning_rate: 3.0e-05
+  CMIUDIPS-CTR:
+    batch_size: 1024
+    beta1: 0.7207748802169359
+    beta2: 0.1
+    eps: 0.5
+    k: 5
+    l2_norm: 0.001
+    lamb: 0.01
+    learning_rate: 0.0001
+  CausE-CTR:
+    alpha1: 0.001
+    batch_size: 512
+    l2_norm: 0.001
+    learning_rate: 1.0e-05
+  DR-CTR:
+    beta1: 0.19229246554662455
+    bsize: 256
+    l2: 1.0e-06
+    lr: 0.0001
+  DRJL-CTR:
+    beta1: 0.2981502498891332
+    bsize: 1024
+    l2: 1.0e-06
+    lr: 0.0001
+  FWDR-CTR:
+    beta1: 0.05565982817741785
+    beta2: 0.003
+    bsize: 512
+    l2: 0.0003
+    lr: 0.0001
+  FWDRJL-CTR:
+    beta1: 0.27290478489583586
+    beta2: 0.01
+    bsize: 256
+    l2: 0.001
+    lr: 3.0e-05
+  FWIPS-CTR:
+    beta2: 1.0e-05
+    bsize: 256
+    l2: 0.0003
+    lr: 3.0e-05
+  FWTJR-CTR:
+    alpha1: 0.08504666574040018
+    alpha2: 0.1
+    beta2: 0.003
+    bsize: 1024
+    l2: 0.001
+    lr: 3.0e-05
+  FWUDIPS-CTR:
+    beta1: 0.3706461579615025
+    beta2: 1.0e-06
+    bsize: 1024
+    l2: 0.001
+    lr: 3.0e-05
+  IDIPS-CTR:
+    beta1: 0.011284469370190542
+    bsize: 1024
+    l2: 0.001
+    lr: 3.0e-05
+  IPS-CTR:
+    bsize: 1024
+    l2: 3.0e-05
+    lr: 0.0001
+  TJR-CTR:
+    alpha1: 0.03547498005283677
+    alpha2: 0.3
+    bsize: 1024
+    l2: 0.001
+    lr: 1.0e-05
+  UDIPS-CTR:
+    beta1: 0.3839992205095526
+    bsize: 1024
+    l2: 0.001
+    lr: 1.0e-05
+  bias_BASE-CTR:
+    batch_size: 512
+    l2_norm: 0.001
+    learning_rate: 1.0e-05
+  bias_BASE1-CTR:
+    alpha: 7
+    batch_size: 1024
+    l2_norm: 0.001
+    learning_rate: 3.0e-05
+    p: 4
+    t: 0.1
+  bias_BASE2-CTR:
+    alpha: 0.03
+    batch_size: 1024
+    beta: 0.003
+    l2_norm: 0.001
+    lam: 0.0001
+    learning_rate: 3.0e-05
+    p: 64
+    t: 3.0e-06
+  bias_BRIDGE-CTR:
+    alpha1: 1
+    batch_size: 1024
+    l2_norm: 0.001
+    learning_rate: 1.0e-05
+  bias_CAUSE-CTR:
+    alpha1: 0.1
+    batch_size: 1024
+    l2_norm: 0.001
+    learning_rate: 3.0e-05
+  bias_CMIABSTUDY-CTR:
+    alpha1: 0.01
+    alpha2: 1
+    batch_size: 256
+    beta1: 0.001
+    k: 3
+    l2_norm: 0.001
+    learning_rate: 3.0e-05
+  bias_CMIBASE-CTR:
+    batch_size: 128
+    beta1: 0.1
+    eps: 0.1
+    k: 20
+    l2_norm: 1.0e-05
+    lamb: 0.0001
+    learning_rate: 0.0001
+  bias_CMIBridge-CTR:
+    alpha1: 1.0e-05
+    batch_size: 1024
+    beta2: 0.01
+    eps: 1
+    k: 3
+    l2_norm: 0.0001
+    lamb: 0.1
+    learning_rate: 0.0003
+  bias_CMIRefine-CTR:
+    batch_size: 1024
+    beta1: 0.9995992966614275
+    beta2: 0.3
+    eps: 10
+    k: 7
+    l2_norm: 1.0e-06
+    lamb: 0.001
+    learning_rate: 1.0e-05
+  bias_CMITJR-CTR:
+    alpha1: 0.025401761238779175
+    alpha2: 1.0
+    batch_size: 1024
+    beta1: 10
+    eps: 5
+    k: 5
+    l2_norm: 0.003
+    lamb: 0.0001
+    learning_rate: 3.0e-05
+  bias_DR-CTR:
+    batch_size: 512
+    beta1: 0.011270893836559461
+    l2_norm: 0.001
+    learning_rate: 3.0e-05
+  bias_DRJL-CTR:
+    batch_size: 1024
+    beta1: 0.1612478789681182
+    l2_norm: 0.001
+    learning_rate: 1.0e-05
+  bias_FWBridge-CTR:
+    alpha1: 1
+    beta2: 0.001
+    bsize: 256
+    l2: 0.001
+    lr: 3.0e-05
+  bias_FWRefine-CTR:
+    beta1: 0.9997251668150615
+    beta2: 0.001
+    bsize: 256
+    l2: 0.001
+    lr: 3.0e-05
+  bias_IDIPS-CTR:
+    batch_size: 1024
+    beta1: 0.010407251814105924
+    l2_norm: 0.0003
+    learning_rate: 3.0e-05
+  bias_IPS-CTR:
+    batch_size: 1024
+    l2_norm: 0.001
+    learning_rate: 0.0001
+  bias_MOE2-CTR:
+    alpha: 5
+    batch_size: 1024
+    l2_norm: 0.001
+    learning_rate: 0.0001
+  bias_REFINE-CTR:
+    batch_size: 512
+    beta1: 0.9996666898279646
+    l2_norm: 0.0003
+    learning_rate: 3.0e-05
+  bias_TJR-CTR:
+    alpha1: 0.05050036375748659
+    alpha2: 0.1
+    batch_size: 128
+    l2_norm: 3.0e-06
+    learning_rate: 3.0e-05
+  bias_UDIPS-CTR:
+    batch_size: 512
+    beta1: 0.36854984650745753
+    l2_norm: 0.001
+    learning_rate: 1.0e-05
+  combine_BASE-CTR:
+    batch_size: 1024
+    l2_norm: 0.001
+    learning_rate: 1.0e-05
+  combine_BASE1-CTR:
+    alpha: 3
+    batch_size: 2048
+    l2_norm: 0.001
+    learning_rate: 0.0001
+    p: 16
+    t: 3.0e-06
+  combine_BASE2-CTR:
+    alpha: 0.1
+    batch_size: 512
+    beta: 0.003
+    l2_norm: 0.001
+    lam: 1.0e-05
+    learning_rate: 3.0e-06
+    p: 128
+    t: 1.0e-05
+  combine_CMIABSTUDY-CTR:
+    batch_size: 512
+    beta1: 0.1
+    eps: 0.0001
+    k: 1
+    l2_norm: 0.003
+    lamb: 0.1
+    learning_rate: 1.0e-05
+  combine_CMIBASE-CTR:
+    batch_size: 512
+    beta1: 1
+    eps: 0.1
+    k: 10
+    l2_norm: 0.003
+    lamb: 1.0e-05
+    learning_rate: 1.0e-05
+  combine_MOE2-CTR:
+    alpha: 0.003
+    batch_size: 1024
+    l2_norm: 0.001
+    learning_rate: 3.0e-05
+  unif_BASE-CTR:
+    batch_size: 512
+    l2_norm: 0.001
+    learning_rate: 1.0e-05

@@ -1,0 +1,132 @@
+kuairand:
+  CausE-CTR:
+    alpha1: 0.0001
+    batch_size: 256
+    l2_norm: 0.0003
+    learning_rate: 3.0e-05
+  DR-CTR:
+    beta1: 0.022463514690557962
+    bsize: 256
+    l2: 1.0e-06
+    lr: 3.0e-05
+  DRJL-CTR:
+    beta1: 0.10231291995960334
+    bsize: 1024
+    l2: 3.0e-06
+    lr: 0.0003
+  FWDR-CTR:
+    beta1: 0.010107013374105241
+    beta2: 1.0e-06
+    bsize: 512
+    l2: 0.0003
+    lr: 0.0003
+  FWDRJL-CTR:
+    beta1: 0.013348893545021154
+    beta2: 0.001
+    bsize: 256
+    l2: 3.0e-05
+    lr: 3.0e-05
+  FWIPS-CTR:
+    beta2: 0.0001
+    bsize: 1024
+    l2: 0.0003
+    lr: 3.0e-05
+  FWTJR-CTR:
+    alpha1: 0.047667798711320326
+    alpha2: 0.5
+    beta2: 1
+    bsize: 1024
+    l2: 0.0003
+    lr: 0.001
+  FWUDIPS-CTR:
+    beta1: 0.3707604449164621
+    beta2: 1.0e-05
+    bsize: 1024
+    l2: 0.001
+    lr: 3.0e-05
+  IDIPS-CTR:
+    beta1: 0.01086221166239485
+    bsize: 256
+    l2: 0.0003
+    lr: 0.0001
+  IPS-CTR:
+    bsize: 1024
+    l2: 0.001
+    lr: 3.0e-05
+  TJR-CTR:
+    alpha1: 0.07036442335780475
+    alpha2: 0.3
+    bsize: 1024
+    l2: 0.0003
+    lr: 0.0003
+  UDIPS-CTR:
+    beta1: 0.3462610863596133
+    bsize: 1024
+    l2: 0.0001
+    lr: 3.0e-05
+  bias_BASE-CTR:
+    batch_size: 256
+    l2_norm: 1.0e-05
+    learning_rate: 1.0e-05
+  bias_BASE1-CTR:
+    alpha: 0.0003
+    batch_size: 256
+    l2_norm: 0.0003
+    learning_rate: 0.0001
+    p: 128
+    t: 0.1
+  bias_BASE2-CTR:
+    alpha: 0.01
+    batch_size: 2048
+    beta: 1
+    l2_norm: 0.0003
+    lam: 0.0001
+    learning_rate: 3.0e-05
+    p: 4
+    t: 1.0e-05
+  bias_FWBridge-CTR:
+    alpha1: 1
+    beta2: 1.0e-06
+    bsize: 256
+    l2: 3.0e-05
+    lr: 3.0e-05
+  bias_FWRefine-CTR:
+    beta1: 0.9411800729568527
+    beta2: 1.0e-06
+    bsize: 256
+    l2: 0.0003
+    lr: 3.0e-05
+  bias_MOE2-CTR:
+    alpha: 5.0e-05
+    batch_size: 512
+    l2_norm: 0.0001
+    learning_rate: 0.0001
+  combine_BASE-CTR:
+    batch_size: 256
+    l2_norm: 3.0e-05
+    learning_rate: 1.0e-05
+  combine_BASE1-CTR:
+    alpha: 10
+    batch_size: 2048
+    l2_norm: 1.0e-05
+    learning_rate: 3.0e-05
+    p: 4
+    t: 0.001
+  combine_BASE2-CTR:
+    alpha: 0.03
+    batch_size: 2048
+    beta: 0.1
+    l2_norm: 0.0003
+    lam: 0.003
+    learning_rate: 3.0e-06
+    p: 4
+    t: 1.0e-05
+  combine_MOE2-CTR:
+    alpha: 0.3
+    batch_size: 512
+    l2_norm: 3.0e-05
+    learning_rate: 1.0e-05
+  unif_BASE-CTR:
+    batch_size: 512
+    l2_norm: 0.0003
+    learning_rate: 3.0e-05

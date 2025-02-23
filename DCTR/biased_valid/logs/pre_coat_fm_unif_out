@@ -1,0 +1,37 @@
+nohup: ignoring input
+2024-07-01 21:20:58.078163: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-07-01 21:21:01.257191: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-01 21:21:01.257316: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2024-07-01 21:21:01.265886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:21:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.74GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-01 21:21:01.265930: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-07-01 21:21:01.266001: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-07-01 21:21:01.266031: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2024-07-01 21:21:01.300952: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-07-01 21:21:01.301470: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-07-01 21:21:01.301621: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu::/usr/local/cuda-11.7/lib64
+2024-07-01 21:21:01.302723: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-07-01 21:21:01.302783: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-07-01 21:21:01.302794: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-07-01 21:21:01.303119: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX512F
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-01 21:21:01.309884: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-01 21:21:01.309923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-01 21:21:01.309931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      
+2024-07-01 21:21:01.364031: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2024-07-01 21:21:01.383666: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2500000000 Hz
+{'model_opt': {'latent_dim': 16, 'feat_num': 647, 'field_num': 10, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'coat', 'model': 'fm', 'data_dir': 'data/coat/tfrecord2', 'cuda': 4, 'source': 'unif'}
+==================================================
+|         BASE-CTR: Set the random seed          |
+==================================================
+
+==================================================
+|               BASE-CTR: Training               |
+==================================================
+
+######### trainer ###########
+lr: 0.0003 l2: 0.001 bs: 64
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 5/5000 [00:00<01:48, 46.21it/s]  0%|          | 11/5000 [00:00<01:41, 48.96it/s]  0%|          | 16/5000 [00:00<01:42, 48.66it/s]  0%|          | 21/5000 [00:00<01:50, 45.09it/s]  1%|          | 26/5000 [00:00<01:55, 43.11it/s]  1%|          | 31/5000 [00:00<01:58, 42.08it/s]  1%|          | 36/5000 [00:00<01:52, 44.17it/s]  1%|          | 41/5000 [00:00<01:48, 45.68it/s]  1%|          | 46/5000 [00:01<01:54, 43.13it/s]  1%|          | 51/5000 [00:01<01:49, 45.00it/s]  1%|          | 56/5000 [00:01<01:46, 46.26it/s]  1%|          | 62/5000 [00:01<01:44, 47.12it/s]  1%|▏         | 67/5000 [00:01<01:43, 47.81it/s]  1%|▏         | 73/5000 [00:01<01:45, 46.79it/s]  2%|▏         | 78/5000 [00:01<01:49, 45.10it/s]  2%|▏         | 83/5000 [00:01<01:49, 44.92it/s]  2%|▏         | 88/5000 [00:01<01:50, 44.63it/s]  2%|▏         | 93/5000 [00:02<01:50, 44.26it/s]  2%|▏         | 98/5000 [00:02<01:51, 43.97it/s]  2%|▏         | 103/5000 [00:02<01:51, 43.91it/s]  2%|▏         | 108/5000 [00:02<01:51, 43.97it/s]  2%|▏         | 113/5000 [00:02<01:52, 43.61it/s]  2%|▏         | 118/5000 [00:02<01:52, 43.54it/s]  2%|▏         | 123/5000 [00:02<01:51, 43.57it/s]  3%|▎         | 128/5000 [00:02<01:52, 43.46it/s]  3%|▎         | 133/5000 [00:02<01:54, 42.46it/s]  3%|▎         | 138/5000 [00:03<01:53, 42.98it/s]  3%|▎         | 143/5000 [00:03<01:52, 43.14it/s]  3%|▎         | 148/5000 [00:03<01:50, 43.80it/s]  3%|▎         | 153/5000 [00:03<01:49, 44.36it/s]  3%|▎         | 158/5000 [00:03<01:49, 44.26it/s]  3%|▎         | 163/5000 [00:03<01:51, 43.44it/s]  3%|▎         | 168/5000 [00:03<01:48, 44.36it/s]  3%|▎         | 173/5000 [00:03<01:49, 44.20it/s]  4%|▎         | 178/5000 [00:03<01:47, 44.96it/s]  4%|▎         | 183/5000 [00:04<01:47, 44.85it/s]  4%|▍         | 188/5000 [00:04<01:46, 45.12it/s]  4%|▍         | 193/5000 [00:04<01:48, 44.34it/s]  4%|▍         | 198/5000 [00:04<01:47, 44.72it/s]  4%|▍         | 203/5000 [00:04<01:47, 44.67it/s]  4%|▍         | 208/5000 [00:04<01:46, 45.08it/s]  4%|▍         | 213/5000 [00:04<01:46, 44.81it/s]  4%|▍         | 218/5000 [00:04<01:46, 44.84it/s]  4%|▍         | 223/5000 [00:05<01:46, 44.65it/s]  5%|▍         | 228/5000 [00:05<01:46, 44.88it/s]  5%|▍         | 233/5000 [00:05<01:46, 44.88it/s]  5%|▍         | 238/5000 [00:05<01:45, 45.35it/s]  5%|▍         | 243/5000 [00:05<01:44, 45.65it/s]  5%|▍         | 248/5000 [00:05<01:41, 46.70it/s]  5%|▌         | 253/5000 [00:05<01:43, 46.08it/s]  5%|▌         | 259/5000 [00:05<01:37, 48.59it/s]  5%|▌         | 262/5000 [00:05<01:45, 44.81it/s]
+AUC:  0.6425322202779926 LOGlOSS:  0.6732776942754616 test_AUC:  0.0 test_LOGlOSS:  10000.0

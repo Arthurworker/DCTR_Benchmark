@@ -1,0 +1,212 @@
+nohup: ignoring input
+2024-07-05 16:40:16.583564: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-07-05 16:40:20.795339: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-05 16:40:20.795552: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2024-07-05 16:40:20.796220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:1d:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.74GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-05 16:40:20.796263: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-07-05 16:40:20.796317: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-07-05 16:40:20.796341: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2024-07-05 16:40:20.829982: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-07-05 16:40:20.830450: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-07-05 16:40:20.830598: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu::/usr/local/cuda-11.7/lib64
+2024-07-05 16:40:20.831526: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-07-05 16:40:20.831594: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-07-05 16:40:20.831606: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-07-05 16:40:20.832223: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX512F
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-05 16:40:20.837040: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-05 16:40:20.837080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-05 16:40:20.837088: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      
+2024-07-05 16:40:20.911609: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2024-07-05 16:40:20.931762: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2500000000 Hz
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'TJR-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|          TJR-CTR: Set the random seed          |
+==================================================
+
+==================================================
+|               TJR-CTR: Training                |
+==================================================
+
+######### trainer ###########
+alpha1 0.011632940197509746 alpha2 1.0 lr: 3e-05 l2: 0.0003 bs: 256
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:32<45:30:29, 32.77s/it]  0%|          | 2/5000 [00:59<40:47:53, 29.39s/it]  0%|          | 3/5000 [01:26<39:03:29, 28.14s/it]  0%|          | 4/5000 [01:51<37:27:49, 27.00s/it]  0%|          | 5/5000 [02:10<33:28:52, 24.13s/it]  0%|          | 6/5000 [02:29<30:58:21, 22.33s/it]  0%|          | 7/5000 [02:49<29:40:50, 21.40s/it]  0%|          | 7/5000 [03:08<37:15:52, 26.87s/it]
+AUC:  0.7199540159636901 LOGlOSS:  0.6227590232512241 test_AUC:  0.6949880051384759 test_LOGlOSS:  0.45386851426496805
+Time:  217.5710626760265
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'Bridge-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|        Bridge-CTR: Set the random seed         |
+==================================================
+
+==================================================
+|              Bridge-CTR: Training              |
+==================================================
+
+######### trainer ###########
+alpha1 0.01 lr: 0.0001 l2: 0.001 bs: 512
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:07<11:03:37,  7.97s/it]  0%|          | 2/5000 [00:14<9:40:03,  6.96s/it]   0%|          | 3/5000 [00:20<9:11:21,  6.62s/it]  0%|          | 4/5000 [00:26<9:01:08,  6.50s/it]  0%|          | 5/5000 [00:33<8:56:18,  6.44s/it]  0%|          | 5/5000 [00:39<11:01:27,  7.95s/it]
+AUC:  0.726478788724793 LOGlOSS:  0.6101627929497198 test_AUC:  0.6436401673643842 test_LOGlOSS:  0.6597271583927844
+Time:  61.604110220912844
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'CausE-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|         CausE-CTR: Set the random seed         |
+==================================================
+
+==================================================
+|              CausE-CTR: Training               |
+==================================================
+
+######### trainer ###########
+alpha1 1e-05 lr: 1e-05 l2: 0.001 bs: 1024
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:03<4:33:03,  3.28s/it]  0%|          | 2/5000 [00:06<4:15:02,  3.06s/it]  0%|          | 3/5000 [00:09<4:17:40,  3.09s/it]  0%|          | 4/5000 [00:12<4:05:39,  2.95s/it]  0%|          | 5/5000 [00:14<4:00:20,  2.89s/it]  0%|          | 6/5000 [00:20<5:06:19,  3.68s/it]  0%|          | 7/5000 [00:25<5:51:32,  4.22s/it]  0%|          | 8/5000 [00:30<6:12:49,  4.48s/it]  0%|          | 9/5000 [00:35<6:33:10,  4.73s/it]  0%|          | 10/5000 [00:40<6:40:28,  4.82s/it]  0%|          | 11/5000 [00:46<6:53:10,  4.97s/it]  0%|          | 12/5000 [00:50<6:53:11,  4.97s/it]  0%|          | 13/5000 [00:56<7:18:17,  5.27s/it]  0%|          | 14/5000 [01:01<7:09:23,  5.17s/it]  0%|          | 15/5000 [01:06<7:01:40,  5.08s/it]  0%|          | 16/5000 [01:12<7:07:03,  5.14s/it]  0%|          | 17/5000 [01:16<6:57:54,  5.03s/it]  0%|          | 18/5000 [01:21<6:50:55,  4.95s/it]  0%|          | 19/5000 [01:24<6:06:43,  4.42s/it]  0%|          | 20/5000 [01:27<5:36:43,  4.06s/it]  0%|          | 21/5000 [01:31<5:16:15,  3.81s/it]  0%|          | 22/5000 [01:34<4:59:54,  3.61s/it]  0%|          | 22/5000 [01:37<6:07:52,  4.43s/it]
+AUC:  0.7282105113025511 LOGlOSS:  0.6117036275499576 test_AUC:  0.6866921083697969 test_LOGlOSS:  0.594737259615634
+Time:  128.36776654794812
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'DR-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|          DR-CTR: Set the random seed           |
+==================================================
+
+==================================================
+|            DR-CTR: Estimate pscore             |
+==================================================
+
+==================================================
+|                DR-CTR: Training                |
+==================================================
+
+######### trainer ###########
+beta1 0.3304614037158079 lr: 1e-05 l2: 0.001 bs: 256
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:29<40:53:51, 29.45s/it]  0%|          | 2/5000 [00:59<41:26:15, 29.85s/it]  0%|          | 3/5000 [01:28<40:37:49, 29.27s/it]  0%|          | 4/5000 [01:57<40:39:32, 29.30s/it]  0%|          | 5/5000 [02:21<37:46:34, 27.23s/it]  0%|          | 6/5000 [02:50<38:55:50, 28.06s/it]  0%|          | 7/5000 [03:18<38:43:20, 27.92s/it]  0%|          | 8/5000 [03:45<38:29:51, 27.76s/it]  0%|          | 9/5000 [04:12<38:05:19, 27.47s/it]  0%|          | 10/5000 [04:40<38:07:52, 27.51s/it]  0%|          | 10/5000 [05:07<42:41:01, 30.79s/it]
+AUC:  0.7204479603350502 LOGlOSS:  0.6217013872325696 test_AUC:  0.6501830542174574 test_LOGlOSS:  0.5402178891554941
+Time:  337.97527767298743
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'DRJL-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|         DRJL-CTR: Set the random seed          |
+==================================================
+
+==================================================
+|           DRJL-CTR: Estimate pscore            |
+==================================================
+
+==================================================
+|               DRJL-CTR: Training               |
+==================================================
+
+######### trainer ###########
+beta1 0.32673728732250873 lr: 0.0001 l2: 1e-05 bs: 1024
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:12<16:47:42, 12.09s/it]  0%|          | 2/5000 [00:23<16:31:53, 11.91s/it]  0%|          | 3/5000 [00:34<15:24:42, 11.10s/it]  0%|          | 4/5000 [00:44<15:00:07, 10.81s/it]  0%|          | 5/5000 [00:53<14:10:54, 10.22s/it]  0%|          | 6/5000 [01:01<13:13:33,  9.53s/it]  0%|          | 6/5000 [01:11<16:35:18, 11.96s/it]
+AUC:  0.7229457938635331 LOGlOSS:  0.6317269894835214 test_AUC:  0.6307595567490512 test_LOGlOSS:  0.6507689253491232
+Time:  97.25824576499872
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'IDIPS-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|         IDIPS-CTR: Set the random seed         |
+==================================================
+
+==================================================
+|           IDIPS-CTR: Estimate pscore           |
+==================================================
+
+==================================================
+|              IDIPS-CTR: Training               |
+==================================================
+
+######### trainer ###########
+beta1 0.1376370346783048 lr: 3e-05 l2: 0.0003 bs: 512
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:06<9:13:14,  6.64s/it]  0%|          | 2/5000 [00:13<9:22:27,  6.75s/it]  0%|          | 3/5000 [00:20<9:25:45,  6.79s/it]  0%|          | 4/5000 [00:25<8:34:43,  6.18s/it]  0%|          | 5/5000 [00:30<8:06:13,  5.84s/it]  0%|          | 6/5000 [00:36<7:49:45,  5.64s/it]  0%|          | 7/5000 [00:41<7:36:48,  5.49s/it]  0%|          | 7/5000 [00:46<9:11:56,  6.63s/it]
+AUC:  0.7262584902027471 LOGlOSS:  0.6117384126147083 test_AUC:  0.6423887776855579 test_LOGlOSS:  0.6070903650076516
+Time:  70.69028899807017
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'IPS-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|          IPS-CTR: Set the random seed          |
+==================================================
+
+==================================================
+|            IPS-CTR: Estimate pscore            |
+==================================================
+
+==================================================
+|               IPS-CTR: Training                |
+==================================================
+
+######### trainer ###########
+lr: 0.0003 l2: 0.0001 bs: 256
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:13<19:20:14, 13.93s/it]  0%|          | 2/5000 [00:26<18:26:19, 13.28s/it]  0%|          | 3/5000 [00:38<17:45:02, 12.79s/it]  0%|          | 4/5000 [00:50<17:19:54, 12.49s/it]  0%|          | 5/5000 [01:03<17:12:36, 12.40s/it]  0%|          | 5/5000 [01:15<20:52:32, 15.05s/it]
+AUC:  0.7265592697551009 LOGlOSS:  0.7595959089175375 test_AUC:  0.6385824688384706 test_LOGlOSS:  0.4513159437684338
+Time:  100.22672657808289
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'Refine-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|        Refine-CTR: Set the random seed         |
+==================================================
+
+==================================================
+|              Refine-CTR: Training              |
+==================================================
+
+######### trainer ###########
+beta1 0.20380067245743397 lr: 3e-05 l2: 0.0003 bs: 512
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:08<11:28:40,  8.27s/it]  0%|          | 2/5000 [00:16<11:10:48,  8.05s/it]  0%|          | 3/5000 [00:24<11:35:00,  8.35s/it]  0%|          | 4/5000 [00:33<11:46:27,  8.48s/it]  0%|          | 5/5000 [00:40<11:07:45,  8.02s/it]  0%|          | 6/5000 [00:47<10:43:39,  7.73s/it]  0%|          | 7/5000 [00:55<10:26:44,  7.53s/it]  0%|          | 8/5000 [01:02<10:21:42,  7.47s/it]  0%|          | 8/5000 [01:09<12:03:40,  8.70s/it]
+AUC:  0.7263463318635442 LOGlOSS:  0.7139739419260963 test_AUC:  0.6508163803437239 test_LOGlOSS:  0.8848325474135875
+Time:  92.94162864598911
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'UDIPS-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': None}
+==================================================
+|         UDIPS-CTR: Set the random seed         |
+==================================================
+
+==================================================
+|           UDIPS-CTR: Estimate pscore           |
+==================================================
+
+==================================================
+|              UDIPS-CTR: Training               |
+==================================================
+
+######### trainer ###########
+beta1 0.3958228416705423 lr: 0.0003 l2: 1e-06 bs: 512
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:09<12:38:36,  9.11s/it]  0%|          | 2/5000 [00:16<11:19:19,  8.16s/it]  0%|          | 3/5000 [00:24<10:57:26,  7.89s/it]  0%|          | 4/5000 [00:32<10:56:13,  7.88s/it]  0%|          | 5/5000 [00:39<10:40:39,  7.70s/it]  0%|          | 5/5000 [00:46<12:59:04,  9.36s/it]
+AUC:  0.726063673060146  LOGlOSS:  0.6066952975009433 test_AUC:  0.6364094695690975 test_LOGlOSS:  0.6192133189613729
+Time:  71.95616366702598
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'bias_BASE-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': 'bias'}
+==================================================
+|         BASE-CTR: Set the random seed          |
+==================================================
+
+==================================================
+|               BASE-CTR: Training               |
+==================================================
+
+######### trainer ###########
+lr: 3e-05 l2: 0.0001 bs: 1024
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:04<5:37:23,  4.05s/it]  0%|          | 2/5000 [00:07<5:30:58,  3.97s/it]  0%|          | 3/5000 [00:11<5:27:37,  3.93s/it]  0%|          | 4/5000 [00:15<5:25:07,  3.90s/it]  0%|          | 5/5000 [00:18<4:38:10,  3.34s/it]  0%|          | 6/5000 [00:20<4:11:45,  3.02s/it]  0%|          | 7/5000 [00:22<3:54:03,  2.81s/it]  0%|          | 8/5000 [00:25<3:43:03,  2.68s/it]  0%|          | 8/5000 [00:27<4:46:54,  3.45s/it]
+AUC:  0.7258084472625335 LOGlOSS:  0.611457587955183 test_AUC:  0.6426552690881997 test_LOGlOSS:  0.6053895208240548
+Time:  47.07879716204479
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'combine_BASE-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': 'combine'}
+==================================================
+|         BASE-CTR: Set the random seed          |
+==================================================
+
+==================================================
+|               BASE-CTR: Training               |
+==================================================
+
+######### trainer ###########
+lr: 3e-05 l2: 0.001 bs: 512
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:08<11:57:16,  8.61s/it]  0%|          | 2/5000 [00:15<10:37:21,  7.65s/it]  0%|          | 3/5000 [00:23<10:49:25,  7.80s/it]  0%|          | 4/5000 [00:31<10:42:14,  7.71s/it]  0%|          | 5/5000 [00:38<10:41:01,  7.70s/it]  0%|          | 6/5000 [00:45<10:11:18,  7.34s/it]  0%|          | 7/5000 [00:52<9:53:32,  7.13s/it]   0%|          | 8/5000 [00:57<9:10:47,  6.62s/it]  0%|          | 9/5000 [01:01<7:57:58,  5.75s/it]  0%|          | 9/5000 [01:04<10:00:31,  7.22s/it]
+AUC:  0.7194841057259878 LOGlOSS:  0.6291880419331414 test_AUC:  0.6968836194217845 test_LOGlOSS:  0.44734046509555253
+Time:  95.05077722191345
+{'model_opt': {'latent_dim': 16, 'feat_num': 41388, 'field_num': 88, 'mlp_dropout': 0.0, 'use_bn': False, 'mlp_dims': [1024, 512, 256], 'cross': 3}, 'dataset': 'kuairand', 'model': 'unif_BASE-CTR', 'data_dir': 'data/kuairand/threshold2_2', 'cuda': 0, 'source': 'unif'}
+==================================================
+|         BASE-CTR: Set the random seed          |
+==================================================
+
+==================================================
+|               BASE-CTR: Training               |
+==================================================
+
+######### trainer ###########
+lr: 1e-05 l2: 0.001 bs: 512
+  0%|          | 0/5000 [00:00<?, ?it/s]  0%|          | 1/5000 [00:02<3:33:12,  2.56s/it]  0%|          | 2/5000 [00:05<3:30:50,  2.53s/it]  0%|          | 3/5000 [00:07<3:29:08,  2.51s/it]  0%|          | 4/5000 [00:10<3:28:12,  2.50s/it]  0%|          | 5/5000 [00:12<3:28:53,  2.51s/it]  0%|          | 6/5000 [00:15<3:30:35,  2.53s/it]  0%|          | 7/5000 [00:17<3:29:52,  2.52s/it]  0%|          | 8/5000 [00:20<3:29:42,  2.52s/it]  0%|          | 9/5000 [00:21<2:57:04,  2.13s/it]  0%|          | 10/5000 [00:22<2:34:35,  1.86s/it]  0%|          | 11/5000 [00:23<2:19:40,  1.68s/it]  0%|          | 12/5000 [00:25<2:09:51,  1.56s/it]  0%|          | 13/5000 [00:28<2:40:33,  1.93s/it]  0%|          | 14/5000 [00:30<2:59:25,  2.16s/it]  0%|          | 15/5000 [00:33<3:11:45,  2.31s/it]  0%|          | 16/5000 [00:36<3:22:38,  2.44s/it]  0%|          | 17/5000 [00:38<3:30:05,  2.53s/it]  0%|          | 18/5000 [00:41<3:29:36,  2.52s/it]  0%|          | 19/5000 [00:44<3:33:34,  2.57s/it]  0%|          | 20/5000 [00:46<3:32:44,  2.56s/it]  0%|          | 21/5000 [00:49<3:31:53,  2.55s/it]  0%|          | 22/5000 [00:51<3:33:57,  2.58s/it]  0%|          | 23/5000 [00:54<3:35:30,  2.60s/it]  0%|          | 24/5000 [00:57<3:41:57,  2.68s/it]  0%|          | 25/5000 [00:59<3:39:19,  2.65s/it]  1%|          | 26/5000 [01:02<3:35:54,  2.60s/it]  1%|          | 27/5000 [01:04<3:33:35,  2.58s/it]  1%|          | 28/5000 [01:06<2:59:03,  2.16s/it]  1%|          | 29/5000 [01:07<2:37:14,  1.90s/it]  1%|          | 30/5000 [01:08<2:24:21,  1.74s/it]  1%|          | 31/5000 [01:09<2:12:20,  1.60s/it]  1%|          | 31/5000 [01:11<3:10:18,  2.30s/it]
+AUC:  0.6160586796557194 LOGlOSS:  0.8483447812969722 test_AUC:  0.6881125501434071 test_LOGlOSS:  0.43220539798208024
+Time:  89.83584139496088
