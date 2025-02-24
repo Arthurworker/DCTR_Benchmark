@@ -34,6 +34,7 @@ You can prepare the coat data in the following code.
 
 ```
 # Coat data preprocessing cmd
+cd DCTR/biased_valid/
 python3 datatransform/preprocess_coat.py 
 python3 coat2tf.py --type tep2
 
@@ -109,6 +110,17 @@ After add global user popularity and item popularity as two extra features. We c
 
 The processing is consistent with the original processing.
 
+```
+# Coat data preprocessing cmd
+cd DCTR2/biased_valid/
+python3 datatransform/preprocess_coat.py 
+python3 coat2tf.py --type tep2
+
+# KuaiRand data preprocessing cmd
+python3 datatransform/preprocess_kuairand.py
+python3 kuairand2tf.py --type tep2
+```
+
 The statistics of the new dataset are as follows:
 
 | dataset  | users | items | train  | utrain | validation | test   | fileds | user_fileds | item_fileds | userid_filed_index | itemid_filed_index | features |
@@ -129,7 +141,7 @@ python3 tune_parameters.py -dataset 'coat' -model 'dcn' -y 'config/base_ctr.yml'
 
 ```
 
-#### 3.2 Running Baselines on new dataset
+#### 3.2 Running Baselines on new dataset with popularity features
 
 ```
 # Bias base model
