@@ -2,12 +2,12 @@
 
 ### 1. Environment
 
-python  3.7+
-pytorch 1.6+
-numpy   1.21+
-pandas  1.1.5+
-optuna  3.6.1+
-tensorflow 2.4.0+
+* python  3.7+
+* pytorch 1.6+
+* numpy   1.21+
+* pandas  1.1.5+
+* optuna  3.6.1+
+* tensorflow 2.4.0+
 
 ### 2. DataPreprocess
 
@@ -28,7 +28,7 @@ We setup two strategies for the dataset preprocessing:
 1. Biased Validation
 2. Unbiased Validation
 
-In order to facilitate the processing of the two different dataset partitioning strategies described above, we use the parameter "type" to set the preprocessing strategy of choice. "*tep2*" denotes the Biased Validation and "*tep3*" denotes the Unbiased Validation
+In order to facilitate the processing of the two different dataset partitioning strategies described above, we use the parameter "type" to set the preprocessing strategy of choice. "*tep2*" denotes the Biased Validation and "*tep3*" denotes the Unbiased Validation. Kuairand preprocessed data can be downloaded via the link: [KuaiRand](https://drive.google.com/file/d/1DVT0_fIqsin9mIRjL5yuiQq2xGz9bbNf/view?usp=drive_link).
 
 You can prepare the coat data in the following code.
 
